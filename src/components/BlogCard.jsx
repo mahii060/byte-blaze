@@ -25,7 +25,7 @@ const BlogCard = ({ blog, deletable, handleDelete }) => {
 BlogCard.propTypes = {
     blog: PropTypes.object.isRequired,
     deletable: PropTypes.bool.isRequired,
-    handleDelete: PropTypes.func.isRequired,
+    handleDelete: PropTypes.func,
 
 }
 export default BlogCard;

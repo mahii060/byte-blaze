@@ -6,7 +6,6 @@ import rehypeRaw from "rehype-raw";
 const Content = () => {
     const blog = useLoaderData();
     const { id, cover_image, title, body_html, tags } = blog;
-    console.log(blog);
     return (
         <div to={`/blog/${id}`} className="border p-2 rounded-lg  mx-auto group hover:no-underline focus:no-underline " >
             <img role="presentation" className="object-cover w-full rounded h-44 bg-gray-500" src={cover_image || placeHolderImg} />

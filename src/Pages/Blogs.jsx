@@ -21,7 +21,8 @@ const Blogs = () => {
                 </Link>
                 <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {
-                        blogs.slice(1, 19).map(blog => <BlogCard key={blog.id} blog={blog} />)
+                        blogs.slice(1, 19).map(blog => <BlogCard key={blog.id}
+                            deletable={false} blog={blog} />)
                     }
                 </div>
             </div>
