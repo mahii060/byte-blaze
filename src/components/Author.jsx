@@ -5,7 +5,6 @@ const Author = () => {
     const blog = useLoaderData();
     const { name, profile_image, username, github_username, twitter_username, website_url } = blog.user;
     return (
-        // <div className="flex justify-center">
         <div className="flex flex-col justify-center p-6 shadow-md rounded-xl sm:px-12 ">
             <img src={profile_image || placeHolderImg} alt="" className="w-32 h-32 mx-auto rounded-full bg-gray-50 aspect-square" />
             <div className="space-y-4 text-center divide-y divide-gray-300">

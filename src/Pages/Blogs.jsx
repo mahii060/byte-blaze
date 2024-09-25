@@ -6,7 +6,6 @@ import Loader from "../components/Loader";
 const Blogs = () => {
     const blogs = useLoaderData();
     const navigation = useNavigation()
-    console.log(blogs);
 
     if (navigation.state === 'loading') return <Loader />
     return (
