@@ -3,7 +3,7 @@ import placeHolderImg from "../assets/404.svg"
 
 const Author = () => {
     const blog = useLoaderData();
-    const { name, profile_image, user_id, username, github_username, twitter_username, website_url } = blog.user;
+    const { name, profile_image, username, github_username, twitter_username, website_url } = blog.user;
     return (
         // <div className="flex justify-center">
         <div className="flex flex-col justify-center p-6 shadow-md rounded-xl sm:px-12 ">

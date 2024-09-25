@@ -5,7 +5,7 @@ import rehypeRaw from "rehype-raw";
 
 const Content = () => {
     const blog = useLoaderData();
-    const { id, cover_image, description, published_at, title, body_html, tags } = blog;
+    const { id, cover_image, title, body_html, tags } = blog;
     console.log(blog);
     return (
         <div to={`/blog/${id}`} className="border p-2 rounded-lg  mx-auto group hover:no-underline focus:no-underline " >
